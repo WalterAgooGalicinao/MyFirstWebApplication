@@ -1,0 +1,5 @@
+C:\Users\Walter.Galicinao\Documents\Repository\MyFirstWebApplication\MyFirstWebApplication.Tests\obj\Debug\net7.0\MyFirstWebApplication.Tests.csproj.AssemblyReference.cache
+C:\Users\Walter.Galicinao\Documents\Repository\MyFirstWebApplication\MyFirstWebApplication.Tests\obj\Debug\net7.0\MyFirstWebApplication.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Walter.Galicinao\Documents\Repository\MyFirstWebApplication\MyFirstWebApplication.Tests\obj\Debug\net7.0\MyFirstWebApplication.Tests.AssemblyInfoInputs.cache
+C:\Users\Walter.Galicinao\Documents\Repository\MyFirstWebApplication\MyFirstWebApplication.Tests\obj\Debug\net7.0\MyFirstWebApplication.Tests.AssemblyInfo.cs
+C:\Users\Walter.Galicinao\Documents\Repository\MyFirstWebApplication\MyFirstWebApplication.Tests\obj\Debug\net7.0\MyFirstWebApplication.Tests.csproj.CoreCompileInputs.cache
