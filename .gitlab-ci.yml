@@ -1,0 +1,133 @@
+# =========================================================================================================
+# -- Author: Walter Agoo Galicinao                                                                       --
+# -- Creation Date: May 08, 2023                                                                         --
+# -- Description: Inchcape Digital CI/CD Pipeline                                                        --
+# =========================================================================================================
+
+# ----------------------------------------------/ VARIABLES /-------------------------------------------- #
+variables:           
+  PLATFORM: 'Any CPU'
+  COMMIT_SHA: $CI_COMMIT_SHORT_SHA
+
+# -----------------------------------------------/ STAGES /---------------------------------------------- #
+stages:              
+  - build
+  - deploy
+  - backup
+
+# /////////////////////////////////////// DEVELOPMENT ENVIRONMENT /////////////////////////////////////// #
+# -----------------------------------------/ DEVELOPMENT BUILD /----------------------------------------- #
+dev-build:
+  stage: build
+  only:
+    - devops/dev
+  tags:
+    - dev
+  script:
+    - dotnet restore "$env:WORKING_DIRECTORY"
+    - dotnet build "$env:WORKING_DIRECTORY" -c Release
+
+# ----------------------------------------/ DEVELOPMENT DEPLOY /----------------------------------------- #
+dev-deploy:  
+  stage: deploy
+  needs:
+    - job: dev-build
+  only:
+    - devops/dev
+  tags:
+    - dev
+  before_script:
+    - Stop-IISSite -Name "$env:SITE_NAME" -Confirm:$false
+    - Get-ChildItem -Path  "$env:DEPLOY_PATH" -Recurse |
+      Select -ExpandProperty FullName |
+      Where-Object { $_ -notlike "$env:DEPLOY_PATH\App_Data*" } |
+      Sort-Object -Property Length -Descending |
+      ForEach-Object { Remove-Item $_ -Force -Recurse -ErrorAction SilentlyContinue }
+  script:
+    - dotnet publish "$env:WORKING_DIRECTORY" -c Release -o "$env:DEPLOY_PATH"
+  after_script:
+    - xcopy /E /I /Y "$env:MEDIA_BACKUP_PATH" "$env:WWWROOT_MEDIA_PATH"
+    - Start-IISSite -Name "$env:SITE_NAME"
+
+# /////////////////////////////////////////// QA ENVIRONMENT //////////////////////////////////////////// #
+# ---------------------------------------------/ QA BUILD /---------------------------------------------- #
+qa-build:
+  stage: build
+  only:
+    - devops/qa
+  tags:
+    - qa
+  script:
+    - dotnet restore "$env:WORKING_DIRECTORY"
+    - dotnet build "$env:WORKING_DIRECTORY" -c Release
+
+# ---------------------------------------------/ QA DEPLOY /--------------------------------------------- #
+qa-deploy:  
+  stage: deploy
+  needs:
+    - job: qa-build
+  only:
+    - devops/qa
+  tags:
+    - qa
+  before_script:
+    - Stop-IISSite -Name "$env:SITE_NAME" -Confirm:$false
+    - Get-ChildItem -Path  "$env:DEPLOY_PATH" -Recurse |
+      Select -ExpandProperty FullName |
+      Where-Object { $_ -notlike "$env:DEPLOY_PATH\App_Data*" } |
+      Sort-Object -Property Length -Descending |
+      ForEach-Object { Remove-Item $_ -Force -Recurse -ErrorAction SilentlyContinue }
+  script:
+    - dotnet publish "$env:WORKING_DIRECTORY" -c Release -o "$env:DEPLOY_PATH"
+  after_script:
+    - xcopy /E /I /Y "$env:MEDIA_BACKUP_PATH" "$env:WWWROOT_MEDIA_PATH"
+    - Start-IISSite -Name "$env:SITE_NAME"
+
+# /////////////////////////////////////// PRODUCTION ENVIRONMENT //////////////////////////////////////// #
+# -----------------------------------------/ PRODUCTION BUILD /------------------------------------------ #
+prod-build:
+  stage: build
+  only:
+    - devops/main
+  when: manual
+  tags:
+    - prod
+  script:
+    - dotnet restore "$env:WORKING_DIRECTORY"
+    - dotnet build "$env:WORKING_DIRECTORY" -c Release
+    
+# -----------------------------------------/ PRODUCTION DEPLOY /----------------------------------------- #
+prod-deploy:  
+  stage: deploy
+  needs:
+    - job: prod-build
+  only:
+    - devops/main
+  when: manual
+  tags:
+    - prod
+  before_script:
+    - Stop-IISSite -Name "$env:SITE_NAME" -Confirm:$false
+    - Get-ChildItem -Path  "$env:DEPLOY_PATH" -Recurse |
+      Select -ExpandProperty FullName |
+      Where-Object { $_ -notlike "$env:DEPLOY_PATH\App_Data*" } |
+      Sort-Object -Property Length -Descending |
+      ForEach-Object { Remove-Item $_ -Force -Recurse -ErrorAction SilentlyContinue }
+  script:
+    - dotnet publish "$env:WORKING_DIRECTORY" -c Release -o "$env:DEPLOY_PATH"
+  after_script:
+    - xcopy /E /I /Y "$env:MEDIA_BACKUP_PATH" "$env:WWWROOT_MEDIA_PATH"
+    
+# -----------------------------------------/ PRODUCTION BACKUP /----------------------------------------- #
+prod-backup:
+  stage: backup
+  needs:
+    - job: prod-deploy
+  only:
+    - devops/main
+  tags:
+    - prod
+  script:
+    - Compress-Archive -Path $env:DEPLOY_PATH -DestinationPath "$env:BACKUP_PATH/${env:SITE_NAME}_${env:COMMIT_SHA}.zip" -ErrorAction SilentlyContinue
+  after_script:
+    - Start-IISSite -Name "$env:SITE_NAME"
