@@ -6,7 +6,8 @@
 <p align="center">A CMS Umbraco Project for Inchcape Digital</p>
 <p align="center">
   <a href="https://dev.inchcape.digital/">
-    <img alt="Development Deployment" src="https://img.shields.io/badge/development_deployment-%E2%9C%94-green?style=for-the-badge/>
+    [<img alt="Development Deployment" src="https://img.shields.io/badge/development_deployment-%E2%9C%94-green?style=for-the-badge/>](https://img.shields.io/badge/development_deployment-%E2%9C%94-green?style=for-the-badge
+)
   </a>
 </p>
 ## Deployment
