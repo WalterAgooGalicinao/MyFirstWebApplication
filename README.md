@@ -8,6 +8,9 @@
 <a href="https://dev.inchcape.digital/">
 <img alt="Development Deployment" src="https://img.shields.io/badge/development_deployment-%E2%9C%94-green?style=for-the-badge" />
 </a>
+ <a href="https://qa.inchcape.digital/">
+<img alt="QA Deployment" src="https://img.shields.io/badge/qa_deployment-%E2%9C%94-green?style=for-the-badge" />
+</a>
 </p>
 
 ## Deployment
