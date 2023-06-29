@@ -94,6 +94,8 @@ Deployment Done - ✔
 
 ## License
 This project is licensed under Inchcape.
+<p>
 <a href="https://www.inchcape.com/">
 <img src="https://img.shields.io/badge/license-inchcape-blue?style=for-the-badge" alt="Inchcape"/>
 </a>
+</p>
