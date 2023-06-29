@@ -85,7 +85,8 @@ The deployment status will appear once the deployment has been triggered and can
 
 ```bash
 Deployment Ongoing - ⦿
-Deployment Done - ✔
+Deployment Passed - ✔
+Deployment Failed - ✘
 ```
 
 ## Author
