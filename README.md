@@ -1,4 +1,4 @@
-<p align="center"> <img width="25%" src="https://dev.inchcape.digital/media/0-images/navigation/Inchcape_Digital_Logo_Hor_rgb-1.png" alt="Inchcape Digital Logo"> </p>
+<p align="center"> <img width="30%" src="https://dev.inchcape.digital/media/0-images/navigation/Inchcape_Digital_Logo_Hor_rgb-1.png" alt="Inchcape Digital Logo"> </p>
 <p align="center">A CMS Umbraco Project for Inchcape Digital</p>
 <p align="center">
 <a href="https://dev.inchcape.digital/">
