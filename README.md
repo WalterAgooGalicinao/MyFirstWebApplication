@@ -93,5 +93,7 @@ Deployment Done - ✔
 - [@WalterAgooGalicinao](https://github.com/WalterAgooGalicinao)
 
 ## License
-This project is licensed under Inchcape
-<p align="center"> <img width="30%" src="https://www.inchcape.com/wp-content/uploads/2022/06/Inchcape_Rainbow_logo2.svg" alt="Inchcape"> </p>
+This project is licensed under Inchcape.
+<a href="https://www.inchcape.com/">
+<img src="https://img.shields.io/badge/license-inchcape-blue?style=for-the-badge" alt="Inchcape"/>
+</a>
