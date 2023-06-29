@@ -79,9 +79,10 @@ namespace inchcape_digital
   }
 }
 ```
-## Status Checks
-These status checks can be seen beside the latest commit that have been made.
-<p align="center">✓ - Deployment Done</p>
+## Deployment Status
+These status checks can be seen beside the latest commit that have been made. For reference:
+Deployment Ongoing - • 
+Deployment Done - ✓
 
 ## Author
 
