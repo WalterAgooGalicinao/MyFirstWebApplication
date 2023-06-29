@@ -11,6 +11,9 @@
  <a href="https://qa.inchcape.digital/">
 <img alt="QA Deployment" src="https://img.shields.io/badge/qa_deployment-%E2%9C%94-green?style=for-the-badge" />
 </a>
+<a href="">
+<img alt="Production Deployment" src="https://img.shields.io/badge/production_deployment-%E2%9C%98-red?style=for-the-badge" />
+</a>
 </p>
 
 ## Deployment
