@@ -83,8 +83,8 @@ namespace inchcape_digital
 ## Deployment Status
 The deployment status will appear once the deployment has been triggered and can be viewed next to the latest commit that has been made. 
 
-#### For reference:
 ```bash
+For reference:
 Deployment Ongoing - ⦿
 Deployment Done - ✔
 ```
