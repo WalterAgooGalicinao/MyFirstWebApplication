@@ -12,7 +12,7 @@
 </a>
 </p>
 
-## To Trigger Deployment
+## To Deploy
 Please make sure to retain the following files and their code before pushing to the branch, creating a pull request, and merging.
 
 #### Program.cs
