@@ -12,8 +12,8 @@
 </a>
 </p>
 
-## To Deploy
-Please make sure to retain the following files and their code before pushing to the branch, creating a pull request, and merging.
+## Deployment
+To trigger the deployment please make sure to retain the following files and their code before pushing to the branch, creating a pull request, and merging.
 
 #### Program.cs
 ```bash
@@ -79,6 +79,10 @@ namespace inchcape_digital
   }
 }
 ```
+## Status Checks
+These status checks can be seen beside the latest commit that have been made.
+<p align="center">✓ - Deployment Done</p>
+
 ## Author
 
 - [@WalterAgooGalicinao](https://github.com/WalterAgooGalicinao)
