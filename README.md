@@ -81,8 +81,9 @@ namespace inchcape_digital
 ```
 ## Deployment Status
 These status checks can be seen beside the latest commit that have been made. For reference:
-<p>Deployment Ongoing - •</p>
-<p>Deployment Done - ✓</p>
+
+Deployment Ongoing - •
+Deployment Done - ✓
 
 ## Author
 
