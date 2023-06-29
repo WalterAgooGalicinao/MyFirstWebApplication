@@ -93,4 +93,5 @@ Deployment Done - ✔
 - [@WalterAgooGalicinao](https://github.com/WalterAgooGalicinao)
 
 ## License
+This project is licensed under Inchcape
 <p align="center"> <img width="30%" src="https://www.inchcape.com/wp-content/uploads/2022/06/Inchcape_Rainbow_logo2.svg" alt="Inchcape"> </p>
