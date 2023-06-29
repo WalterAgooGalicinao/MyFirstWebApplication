@@ -2,13 +2,13 @@
 <p align="center">A CMS Umbraco Project for Inchcape Digital</p>
 <p align="center">
 <a href="https://dev.inchcape.digital/">
-<img alt="Development Deployment" src="https://img.shields.io/badge/development_deployment-%E2%9C%94-green?style=for-the-badge" />
+<img src="https://img.shields.io/badge/development_deployment-%E2%9C%94-green?style=for-the-badge" alt="Development Deployment"/>
 </a>
  <a href="https://qa.inchcape.digital/">
-<img alt="QA Deployment" src="https://img.shields.io/badge/qa_deployment-%E2%9C%94-green?style=for-the-badge" />
+<img src="https://img.shields.io/badge/qa_deployment-%E2%9C%94-green?style=for-the-badge" alt="QA Deployment"/>
 </a>
 <a href="">
-<img alt="Production Deployment" src="https://img.shields.io/badge/production_deployment-%E2%9C%98-red?style=for-the-badge" />
+<img src="https://img.shields.io/badge/production_deployment-%E2%9C%98-red?style=for-the-badge" alt="Production Deployment"/>
 </a>
 </p>
 
@@ -81,7 +81,7 @@ namespace inchcape_digital
 ```
 
 ## Deployment Status
-These deployment status will show up once deployment has been triggered and can be seen beside the latest commit that have been made. 
+The deployment status will appear once the deployment has been triggered and can be viewed next to the latest commit that has been made. 
 
 #### For reference:
 ```bash
@@ -91,3 +91,6 @@ Deployment Done - ✔
 
 ## Author
 - [@WalterAgooGalicinao](https://github.com/WalterAgooGalicinao)
+
+## License
+<p align="center"> <img width="30%" src="https://www.inchcape.com/wp-content/uploads/2022/06/Inchcape_Rainbow_logo2.svg" alt="Inchcape"> </p>
