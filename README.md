@@ -5,6 +5,7 @@
 <a href="https://qa.inchcape.digital/"><img src="https://img.shields.io/badge/qa_deployment-%E2%9C%94-green?style=for-the-badge" alt="QA Deployment"/></a>
 <a href=""><img src="https://img.shields.io/badge/production_deployment-%E2%9C%98-red?style=for-the-badge" alt="Production Deployment"/></a>
 </p>
+![image](https://github.com/INCHCAPE-DIGITAL-DELIVERY-CENTER-COL/InchcapeDigital/assets/121836924/e2237316-f7a5-494f-8159-24d4ae7a0ac2)
 
 ## Deployment
 To trigger the deployment please make sure to retain the following files and their code before pushing to the branch, creating a pull request, and merging.
@@ -93,5 +94,3 @@ This project is licensed under Inchcape.
 <img src="https://img.shields.io/badge/license-inchcape-blue?style=for-the-badge" alt="Inchcape"/>
 </a>
 </p>
-
-![image](https://github.com/INCHCAPE-DIGITAL-DELIVERY-CENTER-COL/InchcapeDigital/assets/121836924/e2237316-f7a5-494f-8159-24d4ae7a0ac2)
