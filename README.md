@@ -6,11 +6,7 @@
 <a href=""><img src="https://img.shields.io/badge/production_deployment-%E2%9C%98-red?style=for-the-badge" alt="Production Deployment"/></a>
 </p>
 
-## Intro
-
 ![qa inchcape digital-scroll_lossy-comp](https://github.com/WalterAgooGalicinao/MyFirstWebApplication/assets/121836924/ff0b5e7e-b0e3-4840-bd7b-a2d2b8698c2c)
-
-![image](https://github.com/INCHCAPE-DIGITAL-DELIVERY-CENTER-COL/InchcapeDigital/assets/121836924/e2237316-f7a5-494f-8159-24d4ae7a0ac2)
 
 ## Deployment
 To trigger the deployment please make sure to retain the following files and their code before pushing to the branch, creating a pull request, and merging.
