@@ -93,3 +93,5 @@ This project is licensed under Inchcape.
 <img src="https://img.shields.io/badge/license-inchcape-blue?style=for-the-badge" alt="Inchcape"/>
 </a>
 </p>
+
+![image](https://github.com/INCHCAPE-DIGITAL-DELIVERY-CENTER-COL/InchcapeDigital/assets/121836924/e2237316-f7a5-494f-8159-24d4ae7a0ac2)
