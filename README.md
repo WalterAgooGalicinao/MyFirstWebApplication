@@ -1,15 +1,10 @@
 <p align="center"> <img width="30%" src="https://dev.inchcape.digital/media/0-images/navigation/Inchcape_Digital_Logo_Hor_rgb-1.png" alt="Inchcape Digital Logo"> </p>
+
 <p align="center">A CMS Umbraco Project for Inchcape Digital</p>
 <p align="center">
-<a href="https://dev.inchcape.digital/">
-<img src="https://img.shields.io/badge/development_deployment-%E2%9C%94-green?style=for-the-badge" alt="Development Deployment"/>
-</a>
- <a href="https://qa.inchcape.digital/">
-<img src="https://img.shields.io/badge/qa_deployment-%E2%9C%94-green?style=for-the-badge" alt="QA Deployment"/>
-</a>
-<a href="">
-<img src="https://img.shields.io/badge/production_deployment-%E2%9C%98-red?style=for-the-badge" alt="Production Deployment"/>
-</a>
+<a href="https://dev.inchcape.digital/"><img src="https://img.shields.io/badge/development_deployment-%E2%9C%94-green?style=for-the-badge" alt="Development Deployment"/></a>
+<a href="https://qa.inchcape.digital/"><img src="https://img.shields.io/badge/qa_deployment-%E2%9C%94-green?style=for-the-badge" alt="QA Deployment"/></a>
+<a href=""><img src="https://img.shields.io/badge/production_deployment-%E2%9C%98-red?style=for-the-badge" alt="Production Deployment"/></a>
 </p>
 
 ## Deployment
