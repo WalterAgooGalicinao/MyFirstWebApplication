@@ -8,7 +8,7 @@
 
 ## Intro
 
-https://api.apify.com/v2/key-value-stores/ImOLcUCbGEQQkHfZK/records/qa.inchcape.digital-scroll_original
+![qa inchcape digital-scroll_lossy-comp](https://github.com/WalterAgooGalicinao/MyFirstWebApplication/assets/121836924/ff0b5e7e-b0e3-4840-bd7b-a2d2b8698c2c)
 
 ![image](https://github.com/INCHCAPE-DIGITAL-DELIVERY-CENTER-COL/InchcapeDigital/assets/121836924/e2237316-f7a5-494f-8159-24d4ae7a0ac2)
 
